@@ -9,8 +9,8 @@ from io import BytesIO
 from io import open
 from time import *
 begin_time = time()
-path = f'/home/user/MBTiles/L12'
-if not os.path.exists(f'/home/user/Directory/12'):
+path = f'/home/user/MBTiles/L12'#输入自己的MBTiles文件目录地址
+if not os.path.exists(f'/home/user/Directory/12'):#输入转化后的文件目录地址
     os.mkdir(f'/home/user/Directory/12')
 for root,dirs,files in os.walk(path):
     for file in files:
